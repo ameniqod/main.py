@@ -1,0 +1,15 @@
+meme_dict = {
+            'КРИНЖ':'Испанский стыд',
+            'ЛОЛ':'Дословный перевод-хахахахах',
+            'РОФЛ':'Сарказм',
+            'КРИПОВЫЙ':'Страшный'
+            }
+for i in range(5):
+    word = input('какое слово вас интересут(Писать ЗАГЛАВНЫМИ буквами)?: ')
+
+    if word in meme_dict.keys():
+        print(meme_dict[word])
+    else:
+        add_word = input('Такого слова нет но ты можешь его добавить')
+        value_word = input('Значение этого слова')
+        meme_dict[add_word] = value_word
